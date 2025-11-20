@@ -1,1 +1,1 @@
-# syncboard
+# Agentic RAG Engine
