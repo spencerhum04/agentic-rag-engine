@@ -8,3 +8,12 @@ A self-correcting Retrieval Augmented Generation (RAG) system engineered to mini
 - Production-Grade Vector Storage: Leverages PostgreSQL with pgvector rather than ephemeral in-memory stores, simulating a real-world enterprise environment.
 - Asynchronous API: Built on FastAPI with uvicorn to handle concurrent user requests efficiently.
 - Containerized Infrastructure: Fully dockerized database setup for consistent deployment across environments.
+
+## Tech Stack
+| Component      | Technology              | Purpose                                                         |
+|----------------|-------------------------|-----------------------------------------------------------------|
+| Orchestration  | LangGraph, LangChain    | Managing stateful agent workflows and cyclic dependency.        |
+| Backend API    | FastAPI                 | High-performance, asynchronous REST API endpoints.              |
+| Database       | PostgreSQL + pgvector   | Storing high-dimensional vector embeddings with relational data.|
+| LLM            | OpenAI GPT-4o           | Inference engine for generation and self-evaluation/grading.    |
+| Infrastructure | Docker & Docker Compose | Containerization of the database service.                       |
